@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'App Works!'
+    return 'Server-1-Api funcionando'
 
-@app.route('/<string:city>/<string:country>/')
-def weather_by_city(country, city):
+@app.route('/data')
+def data_post(country, city):
     url = 'https://samples.openweathermap.org/data/2.5/weather'
     params = dict(
         q=city + "," + country,
