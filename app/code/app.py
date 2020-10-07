@@ -11,7 +11,7 @@ ipb = "http://104.196.187.68"
 
 @app.route('/')
 def index():
-    return 'Server-1-Api funcionando (instancia 1)'
+    return 'Server-1-Api funcionando (instancia 2)'
 
 
 @app.route('/data', methods=["POST"])
